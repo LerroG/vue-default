@@ -13,11 +13,6 @@ const routes = [
 		}
 	},
 	{
-		path: '/questionnaires/:service',
-		name: RouteNamesEnum.questionnaires,
-		component: () => import('@/pages/questionnaires/service.vue')
-	},
-	{
 		path: '/:catchAll(.*)', // Ловит все несуществующие маршруты
 		component: () => import('@/pages/notFound.vue')
 	}
